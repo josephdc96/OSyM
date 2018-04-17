@@ -54,6 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Forms\AlertForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\Form.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,12 +70,32 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controllers\AlertController.cs" />
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Forms\AlertForm.xaml.cs">
+      <DependentUpon>AlertForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form.xaml.cs">
+      <DependentUpon>Form.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\Account.cs" />
+    <Compile Include="Objects\Alarm.cs" />
+    <Compile Include="Objects\Building.cs" />
+    <Compile Include="Objects\Department.cs" />
+    <Compile Include="Objects\DoorLock.cs" />
+    <Compile Include="Objects\Employee.cs" />
+    <Compile Include="Objects\Light.cs" />
+    <Compile Include="Objects\MeetingSpace.cs" />
+    <Compile Include="Objects\MessageBoard.cs" />
+    <Compile Include="Objects\Room.cs" />
+    <Compile Include="Objects\Vent.cs" />
+    <Compile Include="Objects\Zone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
