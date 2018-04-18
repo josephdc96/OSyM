@@ -1,0 +1,30 @@
+﻿{
+  "Departments": [
+    {
+      "DepartmentNumber": 1,
+      "Rooms": [
+        {
+          "RoomNumber": 001,
+          "Zones": [
+            {
+              "ZoneCode": "001A",
+              "MyLight": {
+                "Brightness": 100.0,
+                "Status": true 
+              },
+              "MyVent": {
+                "Temperature":  72.0 
+              } 
+            }
+          ],
+          "Lock": {
+            "Status": true 
+          } 
+        }
+      ],
+      "MeetingSpace": {
+
+      } 
+    }
+  ]
+}

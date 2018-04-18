@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OSyM"
         mc:Ignorable="d"
-        Title="Office System Management" Height="350" Width="525">
+        Title="Office System Management" Height="318.151" Width="734.11" ResizeMode="CanMinimize">
     <Grid>
-        
+        <GroupBox Header="Lights" HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="229">
+            <Grid>
+                <Label Content="Current Value:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Button Content="Change" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Set Intervals" HorizontalAlignment="Left" Margin="132,36,0,0" VerticalAlignment="Top" Width="75"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Vent Temperature" HorizontalAlignment="Left" Height="84" Margin="244,10,0,0" VerticalAlignment="Top" Width="230">
+            <Grid>
+                <Label Content="Current Value:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Button Content="Change" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="75"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Locks" HorizontalAlignment="Left" Height="211" Margin="479,10,0,0" VerticalAlignment="Top" Width="237">
+            <Grid>
+                <Label Content="Room Lock(s):" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="122"/>
+                <Label Content="Building Lock(s):" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="122"/>
+                <Button Content="Change" HorizontalAlignment="Left" Margin="140,159,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Set Intervals" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox Height="41" Margin="10,30,10,0" VerticalAlignment="Top"/>
+                <ListBox HorizontalAlignment="Left" Height="57" Margin="10,97,0,0" VerticalAlignment="Top" Width="205"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Meeting Room" HorizontalAlignment="Left" Height="179" Margin="10,99,0,0" VerticalAlignment="Top" Width="229">
+            <Grid>
+                <Label Content="Your Reservations:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <ListBox Height="100" Margin="10,35,10,0" VerticalAlignment="Top"/>
+                <Button Content="Make Reservation" HorizontalAlignment="Left" Margin="102,135,0,0" VerticalAlignment="Top" Width="105"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Message Board" HorizontalAlignment="Left" Height="179" Margin="244,99,0,0" VerticalAlignment="Top" Width="230">
+            <Grid>
+                <ListBox HorizontalAlignment="Left" Height="112" Margin="10,10,0,0" VerticalAlignment="Top" Width="198"/>
+                <TextBox HorizontalAlignment="Left" Height="20" Margin="10,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Send" HorizontalAlignment="Left" Margin="135,127,0,0" VerticalAlignment="Top" Width="73"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Alert" HorizontalAlignment="Left" Height="52" Margin="479,226,0,0" VerticalAlignment="Top" Width="104">
+            <Button Content="Send Alert" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+        </GroupBox>
+        <GroupBox Header="Manage User(s)" HorizontalAlignment="Left" Height="52" Margin="588,226,0,0" VerticalAlignment="Top" Width="128">
+            <Button Content="Manage User(s)" HorizontalAlignment="Left" Height="19" Margin="10,10,0,0" VerticalAlignment="Top" Width="91"/>
+        </GroupBox>
+
     </Grid>
 </Window>

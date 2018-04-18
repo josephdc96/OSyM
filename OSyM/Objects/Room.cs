@@ -9,7 +9,7 @@ namespace OSyM.Objects
     public class Room
     {
         public int RoomNumber { get; set; }
-        public List<Zone> Zones { get; set; }
+        public Zone[] Zones { get; set; }
         public InteriorLock Lock { get; set; }
     }
 }

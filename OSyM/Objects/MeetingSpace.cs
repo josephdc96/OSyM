@@ -8,6 +8,11 @@ namespace OSyM.Objects
 {
     public class MeetingSpace : Room
     {
+        public object GetCalendar()
+        {
+            return 0;
+        }
+
 
     }
 }

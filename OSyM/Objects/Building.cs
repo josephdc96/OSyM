@@ -8,6 +8,6 @@ namespace OSyM.Objects
 {
     public class Building
     {
-        public List<Department> Departments { get; set; }
+        public Department[] Departments { get; set; }
     }
 }

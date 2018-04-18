@@ -9,6 +9,11 @@ namespace OSyM.Objects
     public static class MessageBoard
     {
         public static List<Message> Messages { get; set; }
+
+        public static void sendMessage(Message message)
+        {
+            Messages.Add(message);
+        }
     }
 
     public class Message

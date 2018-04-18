@@ -9,7 +9,7 @@ namespace OSyM.Objects
     public class Department
     {
         public int DepartmentNumber { get; set; }
-        public List<Room> Rooms { get; set; }
+        public Room[] Rooms { get; set; }
         public MeetingSpace MeetingRoom { get; set; }
     }
 }
