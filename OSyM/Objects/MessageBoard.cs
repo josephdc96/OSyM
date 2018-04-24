@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OSyM.Requests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,13 @@ using System.Threading.Tasks;
 
 namespace OSyM.Objects
 {
-    public static class MessageBoard
+    public class MessageBoard
     {
-        public static List<Message> Messages { get; set; }
+        public List<MessageRequest> Messages = new List<MessageRequest>();
 
-        public static void sendMessage(Message message)
+        public void sendMessage(MessageRequest message)
         {
             Messages.Add(message);
         }
-    }
-
-    public class Message
-    {
-        public Account CreatedBy { get; set; }
-        public string Content { get; set; }
-        public DateTime Created { get; set; }
-        
     }
 }

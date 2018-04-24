@@ -12,6 +12,17 @@ namespace OSyM.Objects
         public string LastName { get; set; }
         public int IDNumber { get; set; }
         public string ZoneCode { get; set; }
+
+        public static T ConvertTo<T>(Employee e) where T : Employee, new()
+        {
+            return new T
+            {
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                IDNumber = e.IDNumber,
+                ZoneCode = e.ZoneCode
+            };
+        }
     }
 
     public class BasicEmployee : Employee { }

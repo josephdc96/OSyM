@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace OSyM.Controllers
 {
-    public interface Controller
+    public interface Controller<T> where T : Requests.Request
     {
         ControllerTypes ControllerType { get; }
 
-        void DisplayConfirmation(string message);
+        bool displayConfirmation(string message);
+        void executeRequest(T request);
     }
 
     public enum ControllerTypes

@@ -10,21 +10,36 @@
               "ZoneCode": "001A",
               "MyLight": {
                 "Brightness": 100.0,
-                "Status": true 
+                "Status": true
               },
               "MyVent": {
-                "Temperature":  72.0 
-              } 
+                "Temperature": 72.0
+              }
             }
           ],
           "Lock": {
-            "Status": true 
-          } 
+            "Status": true
+          }
         }
       ],
-      "MeetingSpace": {
-
-      } 
+      "MeetingRoom": {
+        "RoomNumber": 002,
+        "Zones": [
+          {
+            "ZoneCode": "002A",
+            "MyLight": {
+              "Brightness": 100.0,
+              "Status": true
+            },
+            "MyVent": {
+              "Temperature": 72.0
+            }
+          }
+        ]
+      }
     }
+  ],
+  "Locks": [
+    { "Status":  true }
   ]
 }

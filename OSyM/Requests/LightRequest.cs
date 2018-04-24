@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Threading;
 
-namespace OSyM.Objects
+namespace OSyM.Requests
 {
-    public class Light
+    public class LightRequest : Request
     {
-        public double Brightness { get; set; }
-        public bool Status { get; set; }
+        public double BrightnessValue { get; set; }
         public DateTime? OnTime { get; set; }
         public DateTime? OffTime { get; set; }
     }

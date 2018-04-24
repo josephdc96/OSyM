@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OSyM.Forms"
         mc:Ignorable="d"
-        Title="AlertForm" Height="300" Width="300">
+        Title="AlertForm" Height="122.505" Width="300">
     <Grid>
-        
+        <TextBox x:Name="reason" HorizontalAlignment="Left" Height="23" Margin="63,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
+        <Label Content="Emergency Alert Form. Only use in EMERGENCIES" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Reason" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="207,66,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Click="Button_Click_1"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="127,66,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Button_Click"/>
+
     </Grid>
 </Window>

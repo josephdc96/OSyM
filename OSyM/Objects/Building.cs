@@ -9,5 +9,6 @@ namespace OSyM.Objects
     public class Building
     {
         public Department[] Departments { get; set; }
+        public ExteriorLock[] Locks { get; set; }
     }
 }

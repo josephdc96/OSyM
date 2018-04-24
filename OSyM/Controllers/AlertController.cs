@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using OSyM.Forms;
 using OSyM.Objects;
+using OSyM.Requests;
 
 namespace OSyM.Controllers
 {
-    public class AlertController : Controller
+    public class AlertController : Controller<AlertRequest>
     {
         public ControllerTypes ControllerType => ControllerTypes.Alert;
 
@@ -17,20 +18,23 @@ namespace OSyM.Controllers
 
         public string AlertType;
 
-        public AlertController(Alarm alarm)
+        public void submitAlert(Alarm alarm)
         {
             this.alarm = alarm;
-        }
-
-        public void submitAlert()
-        {
             AlertForm form = new AlertForm(this);
-            if (form.ShowDialog() == true) ;
+            form.ShowDialog();
         }
 
-        public void DisplayConfirmation(string message)
+        public bool displayConfirmation(string message)
         {
             var result = MessageBox.Show(message, "Alarm Message");
+            return true;
+        }
+
+        public void executeRequest(AlertRequest request)
+        {
+            alarm.soundAlarm(request.AlertType);
+            displayConfirmation("Alert Created");
         }
     }
 }

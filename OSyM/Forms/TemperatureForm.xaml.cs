@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OSyM.Controllers;
+using OSyM.Requests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,19 +13,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using OSyM.Controllers;
-using OSyM.Requests;
 
 namespace OSyM.Forms
 {
     /// <summary>
-    /// Interaction logic for AlertForm.xaml
+    /// Interaction logic for TemperatureForm.xaml
     /// </summary>
-    public partial class AlertForm : Window
+    public partial class TemperatureForm : Window
     {
-        private AlertController controller;
+        TemperatureController controller;
 
-        public AlertForm(AlertController controller)
+        public TemperatureForm(TemperatureController controller)
         {
             this.controller = controller;
             InitializeComponent();
@@ -31,14 +31,11 @@ namespace OSyM.Forms
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            controller.executeRequest(new AlertRequest {
-                AlertType = reason.Text
+            controller.executeRequest(new TemperatureRequest
+            {
+                TemperatureValue = temperature.Value
             });
+            this.Close();
         }
     }
 }

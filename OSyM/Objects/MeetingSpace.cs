@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OSyM.Requests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,11 @@ namespace OSyM.Objects
 {
     public class MeetingSpace : Room
     {
-        public object GetCalendar()
+        public List<ReservationRequest> calendar = new List<ReservationRequest>();
+
+        public List<ReservationRequest> GetCalendar()
         {
-            return 0;
+            return calendar;
         }
-
-
     }
 }

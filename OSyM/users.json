@@ -1,0 +1,13 @@
+﻿[
+  {
+    "Username": "jdc0066",
+    "Password": "passw0rd",
+    "EmployeeObj": 
+    {
+      "FirstName": "Joseph",
+      "LastName": "Cauble",
+      "IDNumber": 1,
+      "ZoneCode": "001A"
+    }
+  }
+]

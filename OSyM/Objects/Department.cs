@@ -11,5 +11,6 @@ namespace OSyM.Objects
         public int DepartmentNumber { get; set; }
         public Room[] Rooms { get; set; }
         public MeetingSpace MeetingRoom { get; set; }
+        public MessageBoard Messages { get; set; }
     }
 }
