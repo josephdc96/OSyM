@@ -24,6 +24,7 @@ namespace OSyM.Forms
 
         public ChangeAccessForm(Account acct)
         {
+            this.acct = acct;
             InitializeComponent();
         }
 

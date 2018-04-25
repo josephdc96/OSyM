@@ -34,7 +34,7 @@ namespace OSyM.Forms
             try
             {
                 DateTime start = DateTime.Parse(startText.Text);
-                DateTime end = DateTime.Parse(startText.Text);
+                DateTime end = DateTime.Parse(endText.Text);
 
                 ReservationRequest req = new ReservationRequest
                 {

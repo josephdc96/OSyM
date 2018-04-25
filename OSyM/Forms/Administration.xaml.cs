@@ -95,7 +95,7 @@ namespace OSyM.Forms
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            ChangeAccessForm form = new ChangeAccessForm(((Account)accounts.SelectedItem));
+            ChangeAccessForm form = new ChangeAccessForm((Account)((ListViewItem)accounts.SelectedItem).Tag);
             form.ShowDialog();
         }
     }

@@ -12,12 +12,13 @@
                 <Label x:Name="name" Content="Name: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="username" Content="Username:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="zone" Content="Zone:" HorizontalAlignment="Left" Margin="308,10,0,0" VerticalAlignment="Top"/>
-                <Button Content="Change Password" HorizontalAlignment="Left" Margin="308,41,0,0" VerticalAlignment="Top" Width="109"/>
+                <Button Content="Change Password" HorizontalAlignment="Left" Margin="308,41,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
 
             </Grid>
         </GroupBox>
         <Button Content="OK
 " HorizontalAlignment="Left" Margin="429,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="admin" Content="Admin Section" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1" Visibility="Hidden"/>
 
     </Grid>
 </Window>

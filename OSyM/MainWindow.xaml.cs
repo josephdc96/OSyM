@@ -107,7 +107,7 @@ namespace OSyM
             {
                 reservations.Items.Add(new ListViewItem
                 {
-                    Content = request.startTime.ToLocalTime() + "-" + request.endTime.ToLocalTime(),
+                    Content = request.date.ToShortDateString() + ": " + request.startTime.ToShortTimeString() + "-" + request.endTime.ToShortTimeString(),
                     Tag = request
                 });
             }
@@ -138,7 +138,8 @@ namespace OSyM
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            Window acctManager = new AccountManager(acct);
+            acctManager.ShowDialog();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)

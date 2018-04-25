@@ -32,6 +32,23 @@ namespace OSyM.Forms
             name.Content = "Name: " + acct.EmployeeObj.FirstName + ' ' + acct.EmployeeObj.LastName;
             username.Content = "Username: " + acct.UserName;
             zone.Content = "Zone: " + acct.EmployeeObj.ZoneCode;
+
+            if (acct.EmployeeObj.GetType() == typeof(DepartmentManager) || acct.EmployeeObj.GetType() == typeof(BuildingManager))
+            {
+                admin.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ChangePasswordForm frm = new ChangePasswordForm(acct);
+            frm.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Administration administration = new Administration(acct);
+            administration.ShowDialog();
         }
     }
 }
